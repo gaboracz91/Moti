@@ -12,5 +12,5 @@ google-api-python-client
 Faker
 django-debug-toolbar
 dj_database_url
-psycopg2
+psycopg2-binary
 apscheduler
