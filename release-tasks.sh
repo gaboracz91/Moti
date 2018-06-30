@@ -3,5 +3,5 @@
 echo Migrate
 python manage.py migrate
 
-echo Creating users
-python create_user.py
+#echo Creating users
+#python create_user.py
