@@ -1,3 +1,4 @@
+import datetime
 import os
 
 import django
@@ -12,9 +13,9 @@ sched = BlockingScheduler()
 
 @sched.scheduled_job('cron', day_of_week='mon-sun', hour=22, minute=5)
 def scheduled_job():
-    print('Run generate_call_list')
+    print('Run generate_call_list: {}'.format(datetime.datetime.now()))
     management.call_command('generate_call_list')
-    print('Run reset_should_be_contacted')
+    print('Run reset_should_be_contacted: {}'.format(datetime.datetime.now()))
     management.call_command('reset_should_be_contacted')
 
 
