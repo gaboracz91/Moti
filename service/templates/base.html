@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Moti - Conscious change. Together.</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{% static 'js/button.js' %}"></script>
+</head>
+<body class="wrapper">
+<div class="topnav">
+    <a>Welcome {{ user.username }}</a>
+    <a href="{% url 'button' %}">Button</a>
+    <a href="{% url 'howto' %}">How does it work?</a>
+    <a style="float:right;" href="{% url 'logout'  %}">Logout</a>
+</div>
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Django
+djangorestframework
+markdown
+coreapi
+django-cors-headers
+gunicorn
+whitenoise
+dumb-init
+django_mongodb_engine
+oauth2client
+google-api-python-client
+Faker
+django-debug-toolbar
+dj_database_url
+psycopg2
+apscheduler
