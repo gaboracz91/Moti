@@ -126,10 +126,10 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'messagemoti@gmail.com'
 
-with open(BASE_DIR + '/secretfile') as secret:
-    password = secret.read().strip()
+# with open(BASE_DIR + '/secretfile') as secret:
+#     password = secret.read().strip()
 
-EMAIL_HOST_PASSWORD = password
+EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
