@@ -126,7 +126,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'messagemoti@gmail.com'
 
-with open(BASE_DIR + 'secretfile') as secret:
+with open(BASE_DIR + '/secretfile') as secret:
     password = secret.read().strip()
 
 EMAIL_HOST_PASSWORD = password
