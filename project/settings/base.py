@@ -129,7 +129,7 @@ EMAIL_HOST_USER = 'messagemoti@gmail.com'
 # with open(BASE_DIR + '/secretfile') as secret:
 #     password = secret.read().strip()
 
-EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')
+EMAIL_HOST_PASSWORD = os.environ['PASSWORD']
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
