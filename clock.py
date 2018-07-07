@@ -11,7 +11,7 @@ django.setup()
 sched = BlockingScheduler()
 
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', hour=22, minute=5)
+@sched.scheduled_job('cron', day_of_week='mon-sun', hour=21, minute=5)
 def scheduled_job():
     print('Run generate_call_list: {}'.format(datetime.datetime.now()))
     management.call_command('generate_call_list')
