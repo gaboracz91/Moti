@@ -25,7 +25,7 @@ Yay! You made the first, important step towards a conscious lifestyle change! Co
 I am so happy to welcome you as a participant of the Moti Training Course!
 As we have talked about it in the first session, the program consists of two important parts, one are the sessions themselves, the other one is the constant care system built around it, which is represented by the button.
 You can reach your button here:
-https://www.clickmoti.herokuapp.com 
+https://clickmoti.herokuapp.com 
 Your Username: your full first name (for example: Emma)
 Your Password: your full first name + 123 (for example: Emma123)
 If you have any problem signing in, please contact me via e-mail: messagemoti@gmail.com Or phone: +36305137592
