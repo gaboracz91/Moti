@@ -35,6 +35,17 @@ def create_test_people(request):
     return JsonResponse({"Success": "True"})
 
 
+def reset_should_be_contacted(request):
+    for member in Member.objects.all():
+        member.should_be_contacted = True
+        member.save()
+
+    json_response = {
+        "Success": "True"
+    }
+    return JsonResponse(json_response)
+
+
 def generate_call_list(request):
     spreadsheet = spreadsheet_service.spreadsheets()
     body = {'properties': {'title': 'Call List {}'.format(datetime.date.today())}}

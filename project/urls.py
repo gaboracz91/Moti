@@ -27,6 +27,7 @@ urlpatterns = [
     path('button', views.button, name='button'),
     path('howto', views.howto, name='howto'),
     path('generate_call_list', views.generate_call_list),
+    path('reset_should_be_contacted', views.reset_should_be_contacted),
     path('create_test_people', views.create_test_people),
     path('api/v1/', include('service.urls')),
     path('admin/', admin.site.urls),
